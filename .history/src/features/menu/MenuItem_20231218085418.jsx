@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import { formatCurrency } from "../../utils/helpers";
 
 function MenuItem({ pizza }) {
