@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, redirect } from "react-router-dom";
+import { Form } from "react-router-dom";
 import { createOrder } from "../../services/apiRestaurant";
 
 // https://uibakery.io/regex-library/phone-number
@@ -90,9 +90,9 @@ export async function action({request}) {
     priority: data.priority === "on"
   }
 
-  const newOrder = await createOrder(order)
+  createOrder(order)
 
-  return redirect(`/order/${newOrder.id}`)
+  return null
 }
 
 export default CreateOrder;
