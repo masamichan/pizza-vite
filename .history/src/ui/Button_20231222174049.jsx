@@ -6,7 +6,7 @@ function Button({ children, disabled, to }) {
 
   if (to)
     return (
-      <Link to={to} className={className}>
+      <Link t0={to} className={className}>
         {children}
       </Link>
     );
