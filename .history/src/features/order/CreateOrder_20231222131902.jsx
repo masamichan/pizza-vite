@@ -48,13 +48,13 @@ function CreateOrder() {
       <Form method="POST">
         <div>
           <label>First Name</label>
-          <input className="input" type="text" name="customer" required />
+          <input type="text" name="customer" required />
         </div>
 
         <div>
           <label>Phone number</label>
           <div>
-            <input className="input" type="tel" name="phone" required />
+            <input type="tel" name="phone" required />
           </div>
           {formErrors?.phone && <p>{formErrors.phone}</p>}
         </div>
@@ -62,7 +62,7 @@ function CreateOrder() {
         <div>
           <label>Address</label>
           <div>
-            <input className="input" type="text" name="address" required />
+            <input type="text" name="address" required />
           </div>
         </div>
 
